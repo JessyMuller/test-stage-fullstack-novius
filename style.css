@@ -1,0 +1,466 @@
+*
+{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+	font-family: Verdana, sans-serif;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+header
+{
+	margin: 35px 0;
+}
+
+section
+{
+	position: relative;
+}
+
+ul
+{
+	list-style: none;
+	display: inline-block;
+	width: 100px;
+}
+
+li a
+{
+	border-left: 2px red solid;
+	padding-left: 7px;
+	margin-left: -7px;
+}
+
+
+/* CSS top et menu*/
+#menuTop
+{
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: auto;
+}
+
+#logoLien
+{
+	display: flex;
+	width: 30%;
+	justify-content: space-around;
+}
+
+#logoLien img
+{
+	width: 208px;
+}
+
+.ligne_verticale
+{
+    width:5px;
+    border-left:1px solid gray;
+    height:70px;
+}
+
+
+#lienCinema
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#lienCinema a:hover
+{
+	color: red;
+	border-bottom: 1px red solid;
+	padding-bottom: 3px;
+}
+.programmeDL
+{
+	font-size: 16px;
+	padding-bottom: 3px;
+	margin: auto;
+	color: red;
+	border-bottom: 1px red solid;
+}
+
+.programmeDL a
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.programmeDL img
+{
+	margin-left: 10px;
+	width: 15px;
+}
+
+#lienGeneral
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 70%;
+}
+
+#sectionPage
+{
+	display: flex;
+	height: 50%;
+	justify-content: space-around;	
+	text-align: center;
+	font-size: 12px;
+}
+
+.reseauxSociaux
+{
+	display: flex;
+}
+
+.reseauxSociaux img
+{
+	width: 20px;
+	height: 20px;
+	margin: auto;
+}
+
+.trait_verticale
+{
+    width:5px;
+    border-left:1px solid gray;
+    height:15px;
+    margin: auto;
+}
+
+.bouton
+{
+	color: white;
+	background-color: red;
+	font-weight: bold;
+	margin: auto;
+	padding: 10px;
+}
+
+.bouton:hover .hover
+{
+	display: block;
+	width: 80px;
+	margin-left: 0;
+	color: black;
+}
+
+.bouton .hover .listeHover
+{
+	padding: 0;
+}
+
+.bouton .hover li a
+{
+	border: none;
+}
+
+.bouton .hover a:hover
+{
+	color: red
+}
+
+#page
+{
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	width: 40%;
+}
+
+.separation
+{
+	color: red;
+	margin: auto;
+}
+
+#event
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: 12px;
+}
+
+.element a:hover
+{
+	color: red;
+}
+
+.element:hover .hover
+{
+	display: block;
+}
+
+.hover li
+{
+	margin: 5px 0;
+}
+
+.hover
+{
+	display: none;
+	position: absolute;
+	z-index: 5;
+	margin-left: -25px;
+	background-color: white;
+	width: 150px;
+	height: 100px;
+	font-size: 10px;
+}
+
+.listeHover
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.puce
+{
+	background-color: red;
+	border-radius: 50%;
+	width: 3px;
+	height: 3px;
+	margin-left: -15px;
+	margin-bottom: -7px;
+}
+
+
+
+/************************** SLIDER *************************/
+
+
+/* Contenu du slider */
+.contenuSlider
+{
+  	width: 100%;
+  	max-width: 1400px;
+  	margin: auto;
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+}
+
+.mySlides
+{
+	display: flex;
+	width: 100%;
+}
+
+.slide
+{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.imgSlide
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.imgSlide img
+{
+	width: 100%;
+	height: 410px;
+	margin: auto;
+}
+
+.txtSlide
+{
+	background-color: red;
+	width: 45%;
+}
+
+.txtSlide h2
+{
+	margin: 20% 0 10% 15%;
+	color: white;
+}
+
+.txtSlide p
+{
+	margin: 0 0 0 15%;
+	color: white;
+}
+
+
+
+/* Cercle noir à l'intérieur du slider */
+#rond
+{
+	position: absolute;
+	right: 20%;
+	bottom: 15%;
+}
+
+.dot 
+{
+  	height: 10px;
+  	width: 10px;
+  	margin: 0 2px;
+  	background-color: red;
+  	border-radius: 50%;
+  	display: inline-block;
+  	border: 1px white solid;
+  	transition: background-color 0.6s ease;
+}
+
+.active 
+{
+  	background-color: black;
+  	border: none;
+}
+
+/* Animation slider */
+.anim
+{
+  	-webkit-animation-name: anim;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: anim;
+  	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes anim
+{
+  from 
+  {
+  	opacity: .4
+  }
+
+  to 
+  {
+  	opacity: 1
+  }
+}
+
+@keyframes anim
+{
+  from 
+  {
+  	opacity: .4
+  }
+  
+  to 
+  {
+  	opacity: 1
+  }
+}
+
+
+/*Section slider PHP*/
+
+#programmation_section
+{
+	width: 80%;
+	height: 300px;
+	margin: 0 10%;
+	position: absolute;
+	text-align: center;
+	top: -40px;
+	background-color: white;
+}
+
+#programmation_section h2
+{
+	margin: 20px 0;
+}
+
+#programmation_section h2::after
+{
+	content:"n";
+	color:red;
+}
+
+.tableau
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.date
+{
+	padding: 15px;
+	background-color: rgb(218, 218, 218);
+	font-size: 12px;
+	margin: auto 0;
+}
+
+#calendrierSemaine 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#calendrierSemaine a
+{
+	color: red;
+	border-bottom: 1px red solid;
+	padding-bottom: 5px;
+}
+
+#calendrierSemaine img
+{
+	margin-left: 5px;
+}
+
+
+
+/****************** Slider Date *********************/
+
+
+
+/* Bouton suivant et précédent */
+.prec, .suiv {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin: auto 0;
+  color: black;
+  font-size: 18px;
+  transition: 0.6s ease;
+ 
+}
+
+/* Couleur hover des bouton suivant, précédent */
+.prec:hover, .suiv:hover {
+ color: red;
+}
+
+
+/* Animation du slider dates */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

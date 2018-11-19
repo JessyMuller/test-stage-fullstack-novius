@@ -1,0 +1,132 @@
+@media all and (max-width: 1160px)
+{
+	#menuTop
+	{
+		flex-direction: column;
+		align-items: center;
+		height: 170px;
+		justify-content: space-around;
+	}
+
+	#logoLien
+	{
+		width: 40%;
+	}
+
+	#lienGeneral
+	{
+		width: 100%;
+	}
+
+	#sectionPage
+	{
+		height: 50px;
+	}
+
+	#page
+	{
+		width: 50%;
+	}
+
+	#event
+	{
+		padding: 15px;
+	}
+
+	.txtSlide h2
+	{
+		font-size: 20px;
+	}
+
+	.txtSlide span
+	{
+		font-size: 17px;
+	}
+
+	.txtSlide p
+	{
+		font-size: 12px;
+	}
+
+	#rond
+	{
+		bottom: 30%;
+	}
+}
+
+@media all and (max-width: 800px)
+{
+
+
+	#logoLien
+	{
+		width: 80%;
+		align-items: center;
+	}
+
+	#lienCinema
+	{
+		flex-direction: inherit;
+	}
+
+	#lienCinema a
+	{
+		padding: 0 10px;
+	}
+
+	#lienGeneral
+	{
+		width: 100%;
+	}
+
+	.slide
+	{
+		flex-direction: column;
+	}
+
+	.txtSlide
+	{
+		width: 100%;
+	}
+
+	.txtSlide h2
+	{
+		margin:15px 0 15px 35px;
+	}
+
+	.txtSlide p
+	{
+		margin: 0 0 15px 35px;
+	}
+
+	#rond
+	{
+		bottom: 10%;
+	}
+}
+
+@media all and (max-width: 720px)
+{
+
+	#sectionPage
+	{
+		flex-direction: column;
+		height: 80px;
+	}
+
+	#page
+	{
+		width: 90%;
+	}
+
+	.reseauxSociaux
+	{
+		margin: auto;
+		width: 25%;
+	}
+
+	#event
+	{
+		font-size: 9px;
+	}
+}
